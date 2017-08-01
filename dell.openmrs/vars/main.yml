@@ -1,0 +1,4 @@
+---
+# vars file for dell.openmrs
+apache_package_deb: tomcat7
+apache_package_rhel: tomcat

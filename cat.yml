@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Execute only on RedHat
+      command: ls /home/ansible/playbooks
+      register: valtemp
+    - debug:
+        msg: "{{ valtemp }}"

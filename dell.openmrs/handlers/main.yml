@@ -1,0 +1,10 @@
+---
+# handlers file for dell.openmrs
+- name: restart debian tomcat7
+  service: 
+    name: "{{apache_package_deb}}"
+    state: restarted
+- name: restart rhel tomcat
+  service:
+    name: "{{apache_package_rhel}}"
+    state: restarted
